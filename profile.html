@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PG Community Platform - Profile</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">PG Community</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+    <main class="profile">
+      <section class="profile-header">
+        <img src="assets/user.png" alt="User Avatar" class="avatar" />
+        <div class="profile-info">
+          <h2 id="profileName">Riya Sharma</h2>
+          <p id="profileRole">
+            PG Resident <span class="verified-badge" title="Verified">✔️</span>
+          </p>
+          <div class="verification-status verified">Verified Resident</div>
+        </div>
+      </section>
+      <section class="profile-pg">
+        <h3>My PG</h3>
+        <div class="my-pg-card">
+          <div class="pg-title">
+            Sunrise PG <span class="verified-badge" title="Verified">✔️</span>
+          </div>
+          <div class="pg-location">Bangalore</div>
+          <div class="feature-votes">
+            <div class="feature-item">
+              <span class="feature-icon" title="Food">🍽️</span>
+              <button class="upvote">▲</button>
+              <span class="vote-count">12</span>
+              <button class="downvote">▼</button>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" title="Water">💧</span>
+              <button class="upvote">▲</button>
+              <span class="vote-count">9</span>
+              <button class="downvote">▼</button>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" title="Washing Machine">🧺</span>
+              <button class="upvote">▲</button>
+              <span class="vote-count">7</span>
+              <button class="downvote">▼</button>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" title="Internet">🌐</span>
+              <button class="upvote">▲</button>
+              <span class="vote-count">15</span>
+              <button class="downvote">▼</button>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" title="Cleanliness">🧹</span>
+              <button class="upvote">▲</button>
+              <span class="vote-count">10</span>
+              <button class="downvote">▼</button>
+            </div>
+          </div>
+        </div>
+        <div class="proof-upload">
+          <h4>Upload Proof for Verification</h4>
+          <form class="proof-form">
+            <input type="file" accept="image/*,.pdf" multiple />
+            <input type="text" placeholder="Location (optional)" />
+            <button type="submit">Upload</button>
+          </form>
+        </div>
+      </section>
+      <section class="profile-reviews">
+        <h3>My Reviews</h3>
+        <ul id="myReviews">
+          <li>Great stay at Green Villa!</li>
+          <li>Loved the food at City Comforts.</li>
+        </ul>
+      </section>
+    </main>
+    <script src="assets/scripts.js"></script>
+  </body>
+</html>

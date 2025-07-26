@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PG Community Platform - Dashboard</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">PG Community</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Dashboard</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="login.html" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+    <main class="dashboard">
+      <section class="welcome">
+        <h1>Welcome to the PG Community Platform</h1>
+        <p>Find, list, and review PG accommodations with ease.</p>
+      </section>
+      <section class="search-bar">
+        <input
+          type="text"
+          placeholder="Search by location or PG name..."
+          class="search-input"
+        />
+        <select class="filter-select">
+          <option value="">All Amenities</option>
+          <option value="food">Food</option>
+          <option value="water">Water</option>
+          <option value="washing">Washing Machine</option>
+          <option value="internet">Internet</option>
+          <option value="cleanliness">Cleanliness</option>
+        </select>
+      </section>
+      <section class="pg-listings">
+        <h2>Popular PG Listings</h2>
+        <div class="listings-grid" id="listingsGrid">
+          <!-- Example PG Card -->
+          <div class="pg-card">
+            <div class="pg-header">
+              <span class="pg-title">Sunrise PG</span>
+              <span class="verified-badge" title="Verified">✔️</span>
+            </div>
+            <div class="pg-location">Bangalore</div>
+            <div class="feature-votes">
+              <div class="feature-item">
+                <span class="feature-icon" title="Food">🍽️</span>
+                <button class="upvote">▲</button>
+                <span class="vote-count">12</span>
+                <button class="downvote">▼</button>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon" title="Water">💧</span>
+                <button class="upvote">▲</button>
+                <span class="vote-count">9</span>
+                <button class="downvote">▼</button>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon" title="Washing Machine">🧺</span>
+                <button class="upvote">▲</button>
+                <span class="vote-count">7</span>
+                <button class="downvote">▼</button>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon" title="Internet">🌐</span>
+                <button class="upvote">▲</button>
+                <span class="vote-count">15</span>
+                <button class="downvote">▼</button>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon" title="Cleanliness">🧹</span>
+                <button class="upvote">▲</button>
+                <span class="vote-count">10</span>
+                <button class="downvote">▼</button>
+              </div>
+            </div>
+            <div class="pg-actions">
+              <button class="view-details">View Details</button>
+              <button class="rate-btn">Rate</button>
+            </div>
+          </div>
+          <!-- More PG cards will be dynamically loaded here -->
+        </div>
+        <div class="add-listing-cta">
+          <button class="add-listing-btn">+ List Your PG</button>
+        </div>
+      </section>
+    </main>
+    <script src="assets/scripts.js"></script>
+  </body>
+</html>
